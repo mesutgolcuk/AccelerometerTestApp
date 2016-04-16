@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Accelerometer-HW</string>
+    <string name="active">ClEAR ACTIVE</string>
+    <string name="passive">CLEAR PASSIVE</string>
+    <string name="activeText">ACTIVE: </string>
+    <string name="passiveText">PASSIVE: </string>
+</resources>

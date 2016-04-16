@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstLinear"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Epsilon"
+            android:textSize="18dp"
+            android:id="@+id/textView" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/epsilonText"
+            android:text="0.75"
+            android:width="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Threshold"
+            android:textSize="18dp"
+
+            android:id="@+id/textView2" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/thresholdText"
+            android:text="0.75"
+            android:width="50dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondLinear"
+        android:layout_below="@id/firstLinear"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/startButton"
+            android:onClick="startClicked"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/stopButton"
+            android:onClick="stopClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdLinear"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/secondLinear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="18dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/activeText"
+            android:layout_marginEnd="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/passiveText"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="38dp"
+ />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdLinear"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearPassiveButton"
+            android:text="@string/passive"
+            android:width="130dp"
+            android:layout_centerVertical="true"
+            android:onClick="clearPassiveClicked"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearActiveButton"
+            android:text="@string/active"
+            android:width="130dp"
+            android:onClick="clearActiveClicked"/>
+    </LinearLayout>
+
+</RelativeLayout>
